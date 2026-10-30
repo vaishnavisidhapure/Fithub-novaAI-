@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOVA FIT | Your Complete Fitness World</title>
+  <meta name="description" content="NOVA FIT - Train Smarter. Live Stronger. Premium modern fitness platform featuring elite clubs, master coaches, science-backed nutrition, bio-tracking, and Nova Fit Assistant AI coach.">
+  <meta name="keywords" content="NOVA FIT, fitness, workouts, gym, nutrition, personal trainer, bodybuilding, performance, athlete">
+  <meta name="theme-color" content="#0F1116">
+
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================================
+       TOP NAVBAR
+       ======================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <!-- Premium NOVA FIT Text Logo -->
+      <a href="#hero" class="nova-logo" aria-label="NOVA FIT Home">
+        <div class="nova-logo-icon">
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 26V6L16 20V6" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 26L26 12V26" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="21" cy="9" r="3" fill="#BCB4B7" />
+          </svg>
+        </div>
+        <div class="nova-logo-text">
+          <div class="nova-logo-title">
+            <span class="nova-word">NOVA</span>
+            <span class="fit-word">FIT</span>
+          </div>
+          <span class="nova-logo-subtitle">Train Smarter. Live Stronger.</span>
+        </div>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#gyms" class="nav-link">Clubs</a></li>
+          <li><a href="#workouts" class="nav-link">Workouts</a></li>
+          <li><a href="#trainers" class="nav-link">Coaches</a></li>
+          <li><a href="#shop" class="nav-link">Pro Shop</a></li>
+          <li><a href="#nutrition" class="nav-link">Nutrition</a></li>
+          <li><a href="#calculators" class="nav-link">Calculators</a></li>
+          <li><a href="#knowledge" class="nav-link">Guides</a></li>
+          <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+          <li><a href="#admin" class="nav-link">Admin</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <button class="btn-assistant" onclick="toggleFloatingChat(true)">
+          <div class="assistant-pulse"></div>
+          <span>Nova Fit AI Assistant</span>
+        </button>
+
+        <!-- Cart Button -->
+        <button class="cart-icon-btn" id="cartToggleBtn" aria-label="Shopping Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="cart-badge" id="cartCountBadge">0</span>
+        </button>
+
+        <!-- Mobile Drawer Hamburger -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       HERO SECTION
+       ======================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-glow-bg"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge-pill">
+          <span>NEW RELEASE</span> • The Nova Fit Performance Protocol 3.0
+        </div>
+        <h1 class="hero-headline">
+          Welcome to <span class="brand-highlight">NOVA FIT</span>
+        </h1>
+        <div class="hero-tagline">
+          “<span class="quote-accent">Train Smarter.</span> Live Stronger.”
+        </div>
+        <p class="hero-description">
+          Engineered for relentless athletes and modern achievers. Discover an integrated fitness ecosystem uniting elite recovery clubs, biomechanical training regimens, certified master coaches, and personalized AI guidance.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#gyms" class="btn-primary">
+            <span>Explore Elite Clubs</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <button class="btn-secondary" onclick="toggleFloatingChat(true)">
+            <span>Ask Nova Fit AI Assistant</span>
+          </button>
+        </div>
+
+        <div class="hero-stats-strip">
+          <div class="hero-stat-item">
+            <h4>50K+</h4>
+            <p>Active Athletes</p>
+          </div>
+          <div class="hero-stat-item">
+            <h4>24+</h4>
+            <p>Flagship Clubs</p>
+          </div>
+          <div class="hero-stat-item">
+            <h4>99.4%</h4>
+            <p>Goal Achievement</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card -->
+      <div class="hero-visual-card">
+        <img class="hero-main-img" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80" alt="NOVA FIT Club Experience">
+        <div class="hero-floating-badge">
+          <div class="floating-badge-info">
+            <h5>Black Label Flagship</h5>
+            <p>Biometrics • Cryo Lounge • Olympic Platforms</p>
+          </div>
+          <a href="#gyms" class="btn-card-primary" style="padding: 8px 14px; font-size: 0.8rem;">
+            Virtual Tour
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       BRAND TICKER
+       ======================================================== -->
+  <div class="brand-ticker-bar">
+    <div class="ticker-track">
+      <div class="ticker-item"><span>NOVA FIT</span><span class="ticker-dot"></span><span>HYPERTROPHY PERIODIZATION</span></div>
+      <div class="ticker-item"><span>TRAIN SMARTER. LIVE STRONGER.</span><span class="ticker-dot"></span><span>ZONE 2 METABOLIC CAPACITY</span></div>
+      <div class="ticker-item"><span>NOVA FIT ASSISTANT</span><span class="ticker-dot"></span><span>EVIDENCE-BASED NUTRITION</span></div>
+      <div class="ticker-item"><span>BLACK LABEL ATHLETICS</span><span class="ticker-dot"></span><span>INFRARED RECOVERY SUITES</span></div>
+      <div class="ticker-item"><span>NOVA FIT</span><span class="ticker-dot"></span><span>HYPERTROPHY PERIODIZATION</span></div>
+      <div class="ticker-item"><span>TRAIN SMARTER. LIVE STRONGER.</span><span class="ticker-dot"></span><span>ZONE 2 METABOLIC CAPACITY</span></div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       SECTION: GYM LOCATIONS
+       ======================================================== -->
+  <section class="site-section" id="gyms">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Global Club Locator</span>
+        <h2 class="section-title">Find a NOVA FIT Club</h2>
+        <p class="section-subtitle">
+          Step into architecturally stunning spaces equipped with competition-grade Eleiko steel, custom Olympic platforms, recovery cryo chambers, and bio-tracking labs.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn gym-filter-btn active" data-city="all">All Locations</button>
+        <button class="filter-btn gym-filter-btn" data-city="new york">New York</button>
+        <button class="filter-btn gym-filter-btn" data-city="los angeles">Los Angeles</button>
+        <button class="filter-btn gym-filter-btn" data-city="london">London</button>
+        <button class="filter-btn gym-filter-btn" data-city="tokyo">Tokyo</button>
+      </div>
+
+      <div class="gyms-grid" id="gymsGrid">
+        <!-- Injected via JavaScript from API / Fallback -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION: WORKOUTS & TRAINING PROTOCOLS
+       ======================================================== -->
+  <section class="site-section" id="workouts">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Performance Programming</span>
+        <h2 class="section-title">Targeted NOVA FIT Protocols</h2>
+        <p class="section-subtitle">
+          Engineered by sports scientists to trigger neuromuscular adaptations, progressive overload, and structural resilience.
+        </p>
+      </div>
+
+      <div class="workouts-grid" id="workoutsGrid">
+        <!-- Protocol 1 -->
+        <div class="workout-card">
+          <div class="workout-header-img">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=80" alt="Hypertrophy Protocol">
+            <span class="workout-meta-badge">Hypertrophy Split • 5 Days / Wk</span>
+          </div>
+          <div class="workout-content">
+            <h3 class="workout-title">Hypertrophy Precision Split</h3>
+            <div class="workout-details-row">
+              <span>⏱️ 8 Weeks</span>
+              <span>⚡ Advanced</span>
+              <span>🎯 Density & Growth</span>
+            </div>
+            <p style="font-size: 0.88rem; margin-bottom: 16px;">
+              Scientific volume periodization targeted at maximizing myofibrillar protein synthesis with progressive mechanical tension overload.
+            </p>
+            <div class="workout-exercise-preview">
+              <div class="exercise-item-row">
+                <span class="exercise-name">Barbell Incline Press</span>
+                <span class="exercise-reps">4 sets × 6-8 reps</span>
+              </div>
+              <div class="exercise-item-row">
+                <span class="exercise-name">Weighted Neutral Pull-ups</span>
+                <span class="exercise-reps">4 sets × 8-10 reps</span>
+              </div>
+              <div class="exercise-item-row">
+                <span class="exercise-name">Romanian Deadlift</span>
+                <span class="exercise-reps">3 sets × 8-10 reps</span>
+              </div>
+            </div>
+            <!-- Rest Timer Widget -->
+            <div class="timer-widget">
+              <div>
+                <div style="font-size: 0.72rem; text-transform: uppercase; color: var(--color-soft-grey);">Set Rest Interval</div>
+                <div class="timer-display" id="timerDisplay">01:30</div>
+              </div>
+              <div class="timer-controls">
+                <button class="btn-timer" id="timerStartBtn">Start Rest</button>
+                <button class="btn-timer" id="timerResetBtn" style="background:none; border-color:var(--color-border);">Reset</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Protocol 2 -->
+        <div class="workout-card">
+          <div class="workout-header-img">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80" alt="Metabolic Forge">
+            <span class="workout-meta-badge">Metabolic Conditioning • 4 Days / Wk</span>
+          </div>
+          <div class="workout-content">
+            <h3 class="workout-title">Nova Metabolic Forge</h3>
+            <div class="workout-details-row">
+              <span>⏱️ 6 Weeks</span>
+              <span>⚡ Intermediate</span>
+              <span>🎯 Fat Shred & VO2 Max</span>
+            </div>
+            <p style="font-size: 0.88rem; margin-bottom: 16px;">
+              High-intensity anaerobic lactate intervals combined with functional compound movements to burn body fat while protecting lean tissue.
+            </p>
+            <div class="workout-exercise-preview">
+              <div class="exercise-item-row">
+                <span class="exercise-name">Kettlebell Clean & Push Press</span>
+                <span class="exercise-reps">5 sets × 12 reps</span>
+              </div>
+              <div class="exercise-item-row">
+                <span class="exercise-name">Assault Bike Sprint Burst</span>
+                <span class="exercise-reps">6 rounds × 30s max</span>
+              </div>
+              <div class="exercise-item-row">
+                <span class="exercise-name">Front Squat to Box Jump</span>
+                <span class="exercise-reps">4 sets × 8 reps</span>
+              </div>
+            </div>
+            <button class="btn-card-primary" onclick="showToast('Protocol saved to your Nova Fit Athlete Portal!')" style="margin-top: auto;">
+              Enroll In Protocol
+            </button>
+          </div>
+        </div>
+
+        <!-- Protocol 3 -->
+        <div class="workout-card">
+          <div class="workout-header-img">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Kinetic Durability">
+            <span class="workout-meta-badge">Mobility & Longevity • 3 Days / Wk</span>
+          </div>
+          <div class="workout-content">
+            <h3 class="workout-title">Kinetic Durability & Prehab</h3>
+            <div class="workout-details-row">
+              <span>⏱️ Ongoing</span>
+              <span>⚡ All Levels</span>
+              <span>🎯 Joint Armor & Flex</span>
+            </div>
+            <p style="font-size: 0.88rem; margin-bottom: 16px;">
+              Restore thoracic rotation, open deep hip capsules, and shield rotator cuffs and lower-back structures against heavy axial loads.
+            </p>
+            <div class="workout-exercise-preview">
+              <div class="exercise-item-row">
+                <span class="exercise-name">Thoracic Spine Foam Rolling</span>
+                <span class="exercise-reps">3 sets × 60s</span>
+              </div>
+              <div class="exercise-item-row">
+                <span class="exercise-name">90/90 Hip Flow Transition</span>
+                <span class="exercise-reps">3 sets × 10 / side</span>
+              </div>
+              <div class="exercise-item-row">
+                <span class="exercise-name">Face Pulls + External Rotation</span>
+                <span class="exercise-reps">4 sets × 15 reps</span>
+              </div>
+            </div>
+            <button class="btn-card-primary" onclick="showToast('Protocol saved to your Nova Fit Athlete Portal!')" style="margin-top: auto;">
+              Enroll In Protocol
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION: PERSONAL TRAINERS
+       ======================================================== -->
+  <section class="site-section" id="trainers">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Master Coaching Staff</span>
+        <h2 class="section-title">Train with NOVA FIT Elite Coaches</h2>
+        <p class="section-subtitle">
+          Our world-class coaches hold master certifications in biomechanics, sports nutrition, and Olympic strength preparation.
+        </p>
+      </div>
+
+      <div class="trainers-grid" id="trainersGrid">
+        <!-- Injected via JavaScript from API / Fallback -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION: FITNESS SHOP
+       ======================================================== -->
+  <section class="site-section" id="shop">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Athlete Store</span>
+        <h2 class="section-title">The NOVA FIT Pro Shop</h2>
+        <p class="section-subtitle">
+          Lab-verified supplements, ultra-durable lifting apparel, and heavy-duty gear built to handle maximal poundages.
+        </p>
+      </div>
+
+      <div class="shop-grid" id="shopGrid">
+        <!-- Injected via JavaScript from API / Fallback -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION: NUTRITION & MEAL PLANNER
+       ======================================================== -->
+  <section class="site-section" id="nutrition">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Precision Fueling</span>
+        <h2 class="section-title">NOVA FIT Athlete Nutrition Engine</h2>
+        <p class="section-subtitle">
+          Fueling is the foundation of output. Align your macronutrient ratios with your current periodization phase.
+        </p>
+      </div>
+
+      <div class="nutrition-dashboard">
+        <div class="nutrition-profile-card">
+          <h3 style="font-size: 1.3rem; margin-bottom: 8px;">Active Macro Distribution</h3>
+          <p style="font-size: 0.85rem; color: var(--color-soft-grey);">Current Target: 2,650 kcal (Hypertrophy Surplus)</p>
+
+          <div class="macro-breakdown-box">
+            <div class="macro-bar-item">
+              <div class="macro-label-row">
+                <span>Protein (198g)</span>
+                <strong>30% Target</strong>
+              </div>
+              <div class="macro-bar-bg">
+                <div class="macro-bar-fill fill-protein" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <div class="macro-bar-item">
+              <div class="macro-label-row">
+                <span>Carbohydrates (298g)</span>
+                <strong>45% Target</strong>
+              </div>
+              <div class="macro-bar-bg">
+                <div class="macro-bar-fill fill-carbs" style="width: 70%;"></div>
+              </div>
+            </div>
+
+            <div class="macro-bar-item">
+              <div class="macro-label-row">
+                <span>Healthy Fats (73g)</span>
+                <strong>25% Target</strong>
+              </div>
+              <div class="macro-bar-bg">
+                <div class="macro-bar-fill fill-fats" style="width: 60%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--color-border);">
+            <div style="font-size: 0.82rem; color: var(--color-soft-grey); margin-bottom: 10px;">
+              💡 <em>Nova Fit Rule:</em> Ingest 30g fast-acting carbohydrates and 25g whey isolate within 45 minutes of training completion.
+            </div>
+            <button class="btn-primary" onclick="showToast('Nutrition sync complete!')" style="width: 100%; justify-content: center; padding: 12px;">
+              Update Meal Targets
+            </button>
+          </div>
+        </div>
+
+        <div class="meal-plan-timeline">
+          <div class="meal-card">
+            <div class="meal-time-tag">07:30 AM</div>
+            <div class="meal-info">
+              <div class="meal-title">Power Oats & Whey Isolate Bowl</div>
+              <div class="meal-macros">75g Rolled Oats, 1 Scoop Nova Fit Whey, Blueberries, Almond Butter • 540 kcal | 42g P | 62g C | 14g F</div>
+            </div>
+          </div>
+
+          <div class="meal-card">
+            <div class="meal-time-tag">12:45 PM</div>
+            <div class="meal-info">
+              <div class="meal-title">Grass-Fed Sirloin & Jasmine Rice</div>
+              <div class="meal-macros">200g Lean Beef, 180g Steamed Jasmine Rice, Grilled Asparagus • 680 kcal | 52g P | 70g C | 18g F</div>
+            </div>
+          </div>
+
+          <div class="meal-card">
+            <div class="meal-time-tag">04:30 PM</div>
+            <div class="meal-info">
+              <div class="meal-title">Pre-Workout Glycogen Primer</div>
+              <div class="meal-macros">Rice Cakes with Raw Honey, Nova Fit Pre-Ignition Matrix • 240 kcal | 4g P | 56g C | 1g F</div>
+            </div>
+          </div>
+
+          <div class="meal-card">
+            <div class="meal-time-tag">08:00 PM</div>
+            <div class="meal-info">
+              <div class="meal-title">Wild Salmon & Sweet Potato Mash</div>
+              <div class="meal-macros">220g Atlantic Salmon, 250g Roasted Sweet Potato, Steamed Broccoli • 720 kcal | 48g P | 65g C | 24g F</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION: INTERACTIVE FITNESS CALCULATORS
+       ======================================================== -->
+  <section class="site-section" id="calculators">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Diagnostic Tools</span>
+        <h2 class="section-title">NOVA FIT Performance Calculators</h2>
+        <p class="section-subtitle">
+          Calculate your biometric indices, daily caloric maintenance, macronutrient partition, and estimated 1-Rep Max.
+        </p>
+      </div>
+
+      <div class="calc-container">
+        <!-- Navigation Tabs for Calculators -->
+        <div class="calc-nav-tabs">
+          <button class="calc-tab-btn active" data-calc="bmi">BMI & Health Index</button>
+          <button class="calc-tab-btn" data-calc="tdee">TDEE & Calorie Needs</button>
+          <button class="calc-tab-btn" data-calc="macro">Macronutrient Split</button>
+          <button class="calc-tab-btn" data-calc="onerm">1-Rep Max (1RM)</button>
+        </div>
+
+        <!-- 1. BMI View -->
+        <div class="calc-grid" id="calcViewBmi">
+          <div>
+            <div class="calc-form-group">
+              <label class="calc-form-label">Body Weight (kg)</label>
+              <input type="number" id="bmiWeight" class="calc-input" value="78" min="30" max="250">
+            </div>
+            <div class="calc-form-group">
+              <label class="calc-form-label">Height (cm)</label>
+              <input type="number" id="bmiHeight" class="calc-input" value="180" min="100" max="250">
+            </div>
+          </div>
+          <div class="calc-result-box">
+            <div style="font-size: 0.85rem; text-transform: uppercase; color: var(--color-soft-grey);">Body Mass Index</div>
+            <div class="calc-result-number" id="bmiScore">24.1</div>
+            <div class="calc-result-status" id="bmiStatus">Normal Athletic Weight</div>
+            <p style="font-size: 0.8rem; color: var(--color-soft-grey);">
+              Note: Athletes with high muscle mass may record higher BMI numbers while maintaining low body fat.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. TDEE View -->
+        <div class="calc-grid" id="calcViewTdee" style="display: none;">
+          <div>
+            <div class="calc-form-group">
+              <label class="calc-form-label">Weight (kg)</label>
+              <input type="number" id="tdeeWeight" class="calc-input" value="80">
+            </div>
+            <div class="calc-form-group">
+              <label class="calc-form-label">Height (cm)</label>
+              <input type="number" id="tdeeHeight" class="calc-input" value="182">
+            </div>
+            <div class="calc-form-group">
+              <label class="calc-form-label">Age</label>
+              <input type="number" id="tdeeAge" class="calc-input" value="28">
+            </div>
+            <div class="calc-form-group">
+              <label class="calc-form-label">Training Activity Level</label>
+              <select id="tdeeActivity" class="calc-input">
+                <option value="1.2">Sedentary (Desk Job, little exercise)</option>
+                <option value="1.375">Light (1-3 days / week)</option>
+                <option value="1.55" selected>Moderate (3-5 intense sessions / week)</option>
+                <option value="1.725">Heavy Athlete (6-7 days / week)</option>
+                <option value="1.9">Elite Nova Fit Competitor (2x daily)</option>
+              </select>
+            </div>
+          </div>
+          <div class="calc-result-box">
+            <div style="font-size: 0.85rem; text-transform: uppercase; color: var(--color-soft-grey);">Estimated Daily TDEE</div>
+            <div class="calc-result-number" id="tdeeScore">2,780 kcal</div>
+            <div class="calc-result-status">Maintenance Baseline</div>
+            <p style="font-size: 0.8rem; color: var(--color-soft-grey);">
+              To build muscle, consume +300-400 kcal. To cut fat while preserving lean tissue, consume -400-500 kcal.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Macro View -->
+        <div class="calc-grid" id="calcViewMacro" style="display: none;">
+          <div>
+            <div class="calc-form-group">
+              <label class="calc-form-label">Daily Calorie Target (kcal)</label>
+              <input type="number" id="macroCalories" class="calc-input" value="2600">
+            </div>
+            <div class="calc-form-group">
+              <label class="calc-form-label">Athletic Goal</label>
+              <select id="macroGoal" class="calc-input">
+                <option value="hypertrophy" selected>Hypertrophy (High Carb / High Protein)</option>
+                <option value="cutting">Cutting & Fat Loss (High Protein / Moderate Carb)</option>
+                <option value="keto">Ketogenic Performance (Ultra Low Carb / High Fat)</option>
+              </select>
+            </div>
+          </div>
+          <div class="calc-result-box">
+            <div style="font-size: 0.85rem; text-transform: uppercase; color: var(--color-soft-grey);">Daily Macro Targets</div>
+            <div style="margin: 16px 0; display: flex; justify-content: space-around; text-align: center;">
+              <div>
+                <div style="font-size: 0.75rem; color: #E11D48; font-weight:700;">PROTEIN</div>
+                <div id="macroProtein" style="font-size: 1.3rem; font-weight: 800;">228g (35%)</div>
+              </div>
+              <div>
+                <div style="font-size: 0.75rem; color: #E5A93C; font-weight:700;">CARBS</div>
+                <div id="macroCarbs" style="font-size: 1.3rem; font-weight: 800;">293g (45%)</div>
+              </div>
+              <div>
+                <div style="font-size: 0.75rem; color: #60A5FA; font-weight:700;">FATS</div>
+                <div id="macroFat" style="font-size: 1.3rem; font-weight: 800;">58g (20%)</div>
+              </div>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--color-soft-grey);">
+              Formulated for rapid myofibrillar synthesis and sustained glycogen reserves.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. One-Rep Max View -->
+        <div class="calc-grid" id="calcViewOnerm" style="display: none;">
+          <div>
+            <div class="calc-form-group">
+              <label class="calc-form-label">Lifted Weight (kg)</label>
+              <input type="number" id="onermWeight" class="calc-input" value="120" min="10">
+            </div>
+            <div class="calc-form-group">
+              <label class="calc-form-label">Repetitions Performed (1-10)</label>
+              <input type="number" id="onermReps" class="calc-input" value="5" min="1" max="15">
+            </div>
+          </div>
+          <div class="calc-result-box">
+            <div style="font-size: 0.85rem; text-transform: uppercase; color: var(--color-soft-grey);">Estimated 1RM Max</div>
+            <div class="calc-result-number" id="onermScore">140 kg</div>
+            <div class="calc-result-status">Epley Scientific Formula</div>
+            <p style="font-size: 0.8rem; color: var(--color-soft-grey);">
+              Use this benchmark to program your training intensities (e.g. 75% 1RM for hypertrophy volume).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION: AI FITNESS ASSISTANT ("Nova Fit AI Assistant")
+       ======================================================== -->
+  <section class="site-section" id="assistantSection">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Google Gemini Powered Bio-Coach</span>
+        <h2 class="section-title">Meet Nova Fit AI Assistant</h2>
+        <p class="section-subtitle">
+          Your 24/7 intelligent coach for training periodization, macronutrient calibration, barbell biomechanics, and recovery protocols. Supports English and Hinglish.
+        </p>
+      </div>
+
+      <div class="ai-assistant-wrapper">
+        <div class="ai-assistant-header">
+          <div class="ai-header-left">
+            <div class="ai-avatar">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+              </svg>
+            </div>
+            <div>
+              <div class="ai-header-title">Nova Fit AI Assistant</div>
+              <div class="ai-status-tag">● Live Gemini AI • Active Coach</div>
+            </div>
+          </div>
+          <div style="font-size: 0.82rem; color: var(--color-soft-grey); display: flex; align-items: center; gap: 12px;">
+            <span>Gemini 2.5 Flash</span>
+            <button class="btn-timer" onclick="clearConversationHistory()" style="padding: 4px 10px; font-size: 0.75rem;">Clear Session</button>
+          </div>
+        </div>
+
+        <div class="ai-chat-body" id="aiChatBody">
+          <div class="chat-bubble bot">
+            Hello Athlete! I am your <strong>Nova Fit AI Assistant</strong>, powered by Google Gemini.
+            <br><br>
+            I provide real-time, science-backed guidance for your training, diet, and recovery. Ask me in <strong>English</strong> or <strong>Hinglish</strong>:
+            <br><br>
+            • <em>"Design a 4-day push/pull/legs muscle hypertrophy split"</em><br>
+            • <em>"Bhai protein kitna lena chahiye muscle gain ke liye?"</em><br>
+            • <em>"Give me cues for a pain-free conventional deadlift"</em><br>
+            • <em>"Pre-workout vs post-workout meal timing kya honi chahiye?"</em>
+            <br><br>
+            <em>"Train Smarter. Live Stronger."</em> What is your goal today?
+          </div>
+        </div>
+
+        <!-- Quick Question Prompt Chips -->
+        <div class="chat-quick-chips">
+          <button class="chip-btn">Recommend a 4-day push/pull split</button>
+          <button class="chip-btn">How much protein do I need for hypertrophy?</button>
+          <button class="chip-btn">Barbell squat and deadlift form cues</button>
+          <button class="chip-btn">Bhai weight loss ke liye diet plan batao</button>
+          <button class="chip-btn">Best supplements for athletic recovery</button>
+        </div>
+
+        <div class="ai-input-bar">
+          <input type="text" id="aiChatInput" class="chat-input" placeholder="Ask Nova Fit AI Assistant anything in English or Hinglish...">
+          <button class="btn-send-chat" id="aiSendBtn">Send Prompt</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION: FITNESS KNOWLEDGE BASE & GUIDES
+       ======================================================== -->
+  <section class="site-section" id="knowledge">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Evidence-Based Research</span>
+        <h2 class="section-title">The NOVA FIT Knowledge Base</h2>
+        <p class="section-subtitle">
+          Unfiltered science, muscle architecture breakdowns, and hormonal optimization articles curated by our advisory board.
+        </p>
+      </div>
+
+      <div class="articles-grid">
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="Hypertrophy Blueprint">
+          </div>
+          <div class="article-body">
+            <div class="article-meta-row">
+              <span>SCIENCE & ANATOMY</span>
+              <span>6 min read</span>
+            </div>
+            <h3 class="article-title">The Hypertrophy Blueprint: Mechanical Tension vs Metabolic Stress</h3>
+            <p class="article-summary">
+              A deep dive into motor unit recruitment pathways and why progressive axial loading remains the uncontested foundation of muscle growth.
+            </p>
+            <span class="article-read-link" onclick="showToast('Loading full NOVA FIT research paper...')">
+              Read Scientific Breakdown →
+            </span>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=600&q=80" alt="Nutrient Timing">
+          </div>
+          <div class="article-body">
+            <div class="article-meta-row">
+              <span>NUTRITION STRATEGY</span>
+              <span>5 min read</span>
+            </div>
+            <h3 class="article-title">Nutrient Timing Precision: Maximizing Muscle Protein Synthesis</h3>
+            <p class="article-summary">
+              Examining the leucine saturation threshold, intramuscular glycogen restocking, and circadian insulin sensitivity for natural athletes.
+            </p>
+            <span class="article-read-link" onclick="showToast('Loading full NOVA FIT research paper...')">
+              Read Scientific Breakdown →
+            </span>
+          </div>
+        </div>
+
+        <div class="article-card">
+          <div class="article-img-wrap">
+            <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=600&q=80" alt="Aerobic Engine">
+          </div>
+          <div class="article-body">
+            <div class="article-meta-row">
+              <span>LONGEVITY & CARDIO</span>
+              <span>8 min read</span>
+            </div>
+            <h3 class="article-title">Zone 2 Cardio: Building the Aerobic Engine for Strength Lifters</h3>
+            <p class="article-summary">
+              Why strength athletes and bodybuilders need deep mitochondrial density to accelerate inter-set phosphocreatine resynthesis and heart health.
+            </p>
+            <span class="article-read-link" onclick="showToast('Loading full NOVA FIT research paper...')">
+              Read Scientific Breakdown →
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION: USER DASHBOARD (ATHLETE PORTAL)
+       ======================================================== -->
+  <section class="site-section" id="dashboard">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Member Portal</span>
+        <h2 class="section-title">NOVA FIT Athlete Dashboard</h2>
+        <p class="section-subtitle">
+          Real-time bio-tracking, consistency streaks, hydration metrics, and personalized program status.
+        </p>
+      </div>
+
+      <!-- Stat Cards Strip -->
+      <div class="dashboard-grid">
+        <div class="dash-stat-card">
+          <div class="dash-stat-label">Active Streak</div>
+          <div class="dash-stat-value">18 <span style="font-size: 1rem; color: #2ECC71;">🔥 Days</span></div>
+          <div class="dash-stat-sub">Personal Record: 24 Days</div>
+        </div>
+
+        <div class="dash-stat-card">
+          <div class="dash-stat-label">Daily Calories</div>
+          <div class="dash-stat-value" id="dashCaloriesVal">2,180 / 2,650 kcal</div>
+          <div class="dash-stat-sub">470 kcal remaining for dinner</div>
+        </div>
+
+        <div class="dash-stat-card">
+          <div class="dash-stat-label">Hydration Target</div>
+          <div class="dash-stat-value" id="dashWaterVal">2.8 / 3.5 L</div>
+          <div class="dash-stat-sub">Optimal cellular hydration</div>
+        </div>
+
+        <div class="dash-stat-card">
+          <div class="dash-stat-label">Completed Sessions</div>
+          <div class="dash-stat-value">142</div>
+          <div class="dash-stat-sub">Tier: Black Label Elite</div>
+        </div>
+      </div>
+
+      <!-- Main Dashboard Grid -->
+      <div class="dash-main-layout">
+        <div class="dash-panel">
+          <div class="dash-panel-header">
+            <h4>Weight Progression (Last 7 Weeks)</h4>
+            <span style="font-size: 0.82rem; color: var(--color-soft-grey);">Current: 80.2 kg (-2.3 kg lean recomp)</span>
+          </div>
+          <!-- Chart Visual Mock -->
+          <div class="chart-visual-mock">
+            <div class="chart-bar-wrap">
+              <div class="chart-bar" style="height: 90%;"></div>
+              <span class="chart-bar-label">W1</span>
+            </div>
+            <div class="chart-bar-wrap">
+              <div class="chart-bar" style="height: 86%;"></div>
+              <span class="chart-bar-label">W2</span>
+            </div>
+            <div class="chart-bar-wrap">
+              <div class="chart-bar" style="height: 82%;"></div>
+              <span class="chart-bar-label">W3</span>
+            </div>
+            <div class="chart-bar-wrap">
+              <div class="chart-bar" style="height: 78%;"></div>
+              <span class="chart-bar-label">W4</span>
+            </div>
+            <div class="chart-bar-wrap">
+              <div class="chart-bar" style="height: 74%;"></div>
+              <span class="chart-bar-label">W5</span>
+            </div>
+            <div class="chart-bar-wrap">
+              <div class="chart-bar" style="height: 70%;"></div>
+              <span class="chart-bar-label">W6</span>
+            </div>
+            <div class="chart-bar-wrap">
+              <div class="chart-bar" style="height: 66%; background: var(--color-burgundy-bright);"></div>
+              <span class="chart-bar-label">Current</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px; display: flex; justify-content: space-between; align-items: center;">
+            <div style="font-size: 0.88rem; color: var(--color-soft-grey);">
+              Next Booked Session: <strong>Marcus Vance</strong> (Tomorrow @ 10:00 AM)
+            </div>
+            <button class="btn-timer" onclick="showToast('Calendar synced with Nova Fit schedule!')">
+              Sync Calendar
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick Loggers Panel -->
+        <div class="dash-panel">
+          <h4 style="margin-bottom: 16px;">Quick Daily Loggers</h4>
+
+          <div class="tracker-row">
+            <div>
+              <div style="font-weight: 700; font-size: 0.9rem;">Log Water Intake</div>
+              <div style="font-size: 0.78rem; color: var(--color-soft-grey);">Maintain electrolyte balance</div>
+            </div>
+            <div class="tracker-btns">
+              <button class="btn-small-track" onclick="logWater(0.25)">+250ml</button>
+              <button class="btn-small-track" onclick="logWater(0.5)">+500ml</button>
+            </div>
+          </div>
+
+          <div class="tracker-row">
+            <div>
+              <div style="font-weight: 700; font-size: 0.9rem;">Log Meal Calories</div>
+              <div style="font-size: 0.78rem; color: var(--color-soft-grey);">Quick snack or shake</div>
+            </div>
+            <div class="tracker-btns">
+              <button class="btn-small-track" onclick="logCalories(150)">+150 kcal</button>
+              <button class="btn-small-track" onclick="logCalories(300)">+300 kcal</button>
+            </div>
+          </div>
+
+          <div class="tracker-row">
+            <div>
+              <div style="font-weight: 700; font-size: 0.9rem;">Workout Check-in</div>
+              <div style="font-size: 0.78rem; color: var(--color-soft-grey);">Today's session logged</div>
+            </div>
+            <div class="tracker-btns">
+              <button class="btn-small-track" style="background:var(--color-deep-burgundy); border-color:var(--color-burgundy-bright);" onclick="showToast('Workout verified! Streak increased to 19 days!')">
+                ✓ Check In
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       SECTION: ADMIN PANEL (COMMAND CENTER)
+       ======================================================== -->
+  <section class="site-section" id="admin">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Operations Hub</span>
+        <h2 class="section-title">NOVA FIT Admin Command Center</h2>
+        <p class="section-subtitle">
+          Internal administrative management for memberships, coach roster availability, and flagship club capacity.
+        </p>
+      </div>
+
+      <div class="admin-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <h3 style="font-size: 1.3rem;">Platform Performance Overview</h3>
+            <p style="font-size: 0.85rem; color: var(--color-soft-grey);">System Status: Operational • All 24 Flagship Locations Connected</p>
+          </div>
+          <button class="btn-secondary" onclick="showToast('Exporting Nova Fit Q4 Athlete Analytics...')">
+            Export Master Report
+          </button>
+        </div>
+
+        <div class="admin-table-wrap">
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Athlete / Member</th>
+                <th>Tier</th>
+                <th>Primary Location</th>
+                <th>Last Check-In</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Alex Mercer</strong><br><small style="color:var(--color-muted-grey);">alex@novafit.com</small></td>
+                <td>Black Label Elite</td>
+                <td>Metropolis Downtown (NY)</td>
+                <td>Today, 09:15 AM</td>
+                <td><span class="status-badge status-active">Active</span></td>
+                <td><button class="btn-timer" onclick="showToast('Viewing athlete record for Alex Mercer')">Manage</button></td>
+              </tr>
+              <tr>
+                <td><strong>Seraphina Lin</strong><br><small style="color:var(--color-muted-grey);">s.lin@athletics.io</small></td>
+                <td>Black Label Elite</td>
+                <td>Beverly Hills Sanctuary</td>
+                <td>Yesterday, 05:40 PM</td>
+                <td><span class="status-badge status-active">Active</span></td>
+                <td><button class="btn-timer" onclick="showToast('Viewing athlete record for Seraphina Lin')">Manage</button></td>
+              </tr>
+              <tr>
+                <td><strong>James K. Donovan</strong><br><small style="color:var(--color-muted-grey);">jdonovan@finance.co.uk</small></td>
+                <td>Executive Club</td>
+                <td>Mayfair Performance (London)</td>
+                <td>3 days ago</td>
+                <td><span class="status-badge status-pending">Pass Renewal</span></td>
+                <td><button class="btn-timer" onclick="showToast('Renewal sent to James Donovan')">Send Link</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================
+       FOOTER
+       ======================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="#hero" class="nova-logo">
+            <div class="nova-logo-icon">
+              <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+                <path d="M6 26V6L16 20V6" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 26L26 12V26" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="nova-logo-text">
+              <div class="nova-logo-title">
+                <span class="nova-word">NOVA</span>
+                <span class="fit-word">FIT</span>
+              </div>
+            </div>
+          </a>
+          <p>
+            The premier athletic ecosystem uniting world-class strength spaces, sports science, and intelligent coaching.
+          </p>
+          <div style="font-weight: 700; color: var(--color-white); margin-bottom: 14px;">
+            “Train Smarter. Live Stronger.”
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">IG</a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube">YT</a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter">X</a>
+            <a href="#" class="social-icon-btn" aria-label="Spotify">SP</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Ecosystem</h4>
+          <ul class="footer-links">
+            <li><a href="#gyms">Global Clubs</a></li>
+            <li><a href="#workouts">Workout Protocols</a></li>
+            <li><a href="#trainers">Master Coaches</a></li>
+            <li><a href="#shop">Pro Shop</a></li>
+            <li><a href="#nutrition">Nutrition Engine</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Intelligence</h4>
+          <ul class="footer-links">
+            <li><a href="#assistantSection">Nova Fit Assistant</a></li>
+            <li><a href="#calculators">Biometric Calculators</a></li>
+            <li><a href="#knowledge">Research Base</a></li>
+            <li><a href="#dashboard">Athlete Portal</a></li>
+            <li><a href="#admin">Command Center</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 16px;">
+            Subscribe to the weekly <em>Nova Performance Letter</em> for peer-reviewed hypertrophy protocols.
+          </p>
+          <div style="display: flex; gap: 8px;">
+            <input type="email" placeholder="athlete@novafit.com" class="calc-input" style="font-size: 0.85rem; padding: 10px 14px;">
+            <button class="btn-timer" style="background:var(--color-burgundy-bright);" onclick="showToast('Subscribed to Nova Performance Letter!')">
+              Join
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 <strong>NOVA FIT</strong> Inc. All rights reserved. Built with precision and uncompromising standards.
+        </div>
+        <div style="display: flex; gap: 24px;">
+          <a href="#" onclick="showToast('Privacy Policy'); return false;">Privacy Policy</a>
+          <a href="#" onclick="showToast('Terms of Service'); return false;">Terms of Service</a>
+          <a href="#" onclick="showToast('Cookie Preferences'); return false;">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================
+       MODALS & SLIDE-OUT DRAWERS
+       ======================================================== -->
+
+  <!-- Booking Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" onclick="closeModal()">✕</button>
+      <h3 id="bookingModalTitle" style="font-size: 1.4rem; margin-bottom: 8px;">Book Consultation</h3>
+      <p style="font-size: 0.85rem; color: var(--color-soft-grey); margin-bottom: 24px;">
+        Lock in your 1-on-1 session with our certified NOVA FIT coaching staff.
+      </p>
+
+      <form onsubmit="confirmBooking(event)">
+        <input type="hidden" id="bookingTargetInput" value="">
+        <div class="calc-form-group">
+          <label class="calc-form-label">Preferred Date</label>
+          <input type="date" id="bookingDateInput" class="calc-input" required value="2026-11-02">
+        </div>
+        <div class="calc-form-group">
+          <label class="calc-form-label">Preferred Time Slot</label>
+          <select id="bookingTimeInput" class="calc-input">
+            <option>08:00 AM - 09:00 AM</option>
+            <option selected>10:00 AM - 11:00 AM</option>
+            <option>02:00 PM - 03:00 PM</option>
+            <option>05:30 PM - 06:30 PM</option>
+          </select>
+        </div>
+        <div class="calc-form-group">
+          <label class="calc-form-label">Primary Training Goal</label>
+          <input type="text" class="calc-input" placeholder="e.g. Hypertrophy, Deadlift form check, Body recomp" required value="Hypertrophy and strength peaking">
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 14px; margin-top: 10px;">
+          Confirm Booking
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Shopping Cart Drawer Overlay & Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3 style="font-size: 1.25rem;">NOVA FIT Cart</h3>
+      <button style="background: none; border: none; color: var(--color-soft-grey); font-size: 1.4rem; cursor: pointer;" id="closeCartBtn">✕</button>
+    </div>
+
+    <div class="cart-items-list" id="cartItemsList">
+      <p style="text-align: center; color: var(--color-soft-grey); margin-top: 40px;">Your Nova Fit cart is empty.</p>
+    </div>
+
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$0.00</span>
+      </div>
+      <button class="btn-primary" id="checkoutBtn" style="width: 100%; justify-content: center; padding: 14px;">
+        Proceed to Secure Checkout
+      </button>
+    </div>
+  </div>
+
+  <!-- Floating Chatbot Widget (Google Gemini Powered) -->
+  <div class="floating-chat-widget" id="floatingChatWidget" aria-label="Nova Fit AI Assistant Window">
+    <div class="floating-chat-header">
+      <div class="floating-chat-brand">
+        <div class="floating-chat-avatar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2">
+            <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+          </svg>
+        </div>
+        <div class="floating-chat-titles">
+          <h4>Nova Fit AI Assistant</h4>
+          <span class="floating-chat-status">● Live Gemini Coach</span>
+        </div>
+      </div>
+      <div class="floating-chat-actions">
+        <button class="btn-chat-action" id="floatingClearBtn" title="Clear Conversation" aria-label="Clear chat">🗑️</button>
+        <button class="btn-chat-action" id="floatingCloseBtn" title="Close chat" aria-label="Close chat">✕</button>
+      </div>
+    </div>
+
+    <!-- Message Feed -->
+    <div class="floating-chat-messages" id="floatingChatMessages">
+      <div class="chat-bubble bot">
+        Hey there! I am your <strong>Nova Fit AI Assistant</strong>, powered by Google Gemini.
+        <br><br>
+        Ask me anything about workouts, muscle building, macro targets, exercise technique, or recovery in <strong>English</strong> or <strong>Hinglish</strong>!
+      </div>
+    </div>
+
+    <!-- Quick Prompt Chips -->
+    <div class="floating-chat-chips">
+      <button class="chip-btn" onclick="sendQuickPrompt('Suggest a 4-day workout plan for muscle hypertrophy')">💪 4-Day Muscle Split</button>
+      <button class="chip-btn" onclick="sendQuickPrompt('How much protein should I eat daily for strength training?')">🥗 Protein Targets</button>
+      <button class="chip-btn" onclick="sendQuickPrompt('Bhai gym me beginner ke liye best exercises kya hain?')">🗣️ Beginner Tips (Hinglish)</button>
+      <button class="chip-btn" onclick="sendQuickPrompt('How do I fix my lower back rounding during deadlifts?')">🏋️ Deadlift Form</button>
+      <button class="chip-btn" onclick="sendQuickPrompt('Best post-workout recovery strategies')">⚡ Recovery Protocol</button>
+    </div>
+
+    <!-- Input Bar -->
+    <div class="floating-chat-input-row">
+      <input type="text" id="floatingChatInput" placeholder="Ask about workouts, diet, or recovery..." autocomplete="off">
+      <button id="floatingChatSend" aria-label="Send message">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Floating Assistant Quick-Launch Button -->
+  <div class="floating-assistant-pill" id="floatingAssistantBtn" role="button" aria-label="Toggle Nova Fit AI Assistant">
+    <div class="assistant-pulse"></div>
+    <span>Nova Fit AI Assistant</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="static/js/app.js"></script>
+</body>
+</html>
